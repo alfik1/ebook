@@ -21,9 +21,9 @@ class GetEbooks(generics.ListAPIView):
 
 
 class CreateEbook(generics.ListAPIView):
-    serializer_class=EbookSerializer
+   
     permission_classes = []
-    queryset= Ebooks.objects.all()
+    
     def post(self,request):
         try:    
             data = request.data
